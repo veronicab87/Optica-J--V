@@ -419,41 +419,184 @@ rounded-2xl
 
       </div>
     </div>
-    {/* PORTAFOLIO */}
-    <div>
-      <h2 className="text-3xl font-bold text-morado mb-6">
-        Portafolio
-      </h2>
+{/* PORTAFOLIO */}
 
-<div className="
+<div>
+
+<h2 className="
+text-3xl
+font-bold
+text-morado
+mb-6
+">
+Portafolio
+</h2>
+
+
+<div
+className="
 grid
 grid-cols-2
 sm:grid-cols-3
 lg:grid-cols-4
 gap-4
 sm:gap-6
-">        {[
-          "piloto.png",
-          "rayban 1.jpeg",
-          "carolina h sol.png",
-          "of carolina.png",
-          "caroaga.jpeg",
-          "pradah.jpeg",
-          "pramcolor.jpeg",
-          "lacostesh.jpeg",
-        ].map((img, i) => (
+"
+>
 
-          <img
-            key={i}
-            src={`/home/${img}`}
-            alt=""
-            className="rounded-xl h-44 w-full object-cover shadow-lg hover:scale-105 transition"
-          />
 
-        ))}
-      </div>
-    </div>
-  </div>
+{[
+"piloto.png",
+"rayban 1.jpeg",
+"carolina h sol.png",
+"of carolina.png",
+"caroaga.jpeg",
+"pradah.jpeg",
+"pramcolor.jpeg",
+"lacostesh.jpeg",
+"accesorios 1.jpeg",
+"accesorios 2.jpeg",
+"promo1.png",
+"blue.jpeg",
+
+].map((img,i)=>(
+
+
+<details
+key={i}
+className="
+group
+cursor-pointer
+"
+>
+
+
+<summary
+className="
+list-none
+"
+>
+
+
+<img
+
+src={`/home/${img}`}
+
+alt="Óptica J&V"
+
+className="
+rounded-xl
+h-36
+sm:h-44
+w-full
+object-cover
+shadow-lg
+hover:scale-105
+transition
+duration-300
+"
+
+/>
+
+
+</summary>
+
+
+
+<div
+
+className="
+fixed
+inset-0
+z-[100]
+bg-black/80
+flex
+items-center
+justify-center
+p-5
+"
+
+>
+
+
+<div
+className="
+relative
+bg-white
+rounded-3xl
+p-3
+max-w-5xl
+w-full
+shadow-2xl
+"
+>
+
+
+<img
+
+src={`/home/${img}`}
+
+alt="Vista ampliada"
+
+className="
+w-full
+max-h-[80vh]
+object-contain
+rounded-2xl
+"
+
+/>    
+
+
+
+<button
+
+onClick={(e)=>{
+  e.preventDefault();
+  e.currentTarget.closest("details").removeAttribute("open");
+}}
+
+className="
+absolute
+top-4
+right-4
+bg-purple-600
+text-white
+w-10
+h-10
+rounded-full
+text-xl
+font-bold
+"
+
+>
+
+×
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+
+</details>
+
+
+))}
+
+
+</div>
+
+
+</div>
+</div>
+
+
+
   {/* ---------------- COLUMNA DERECHA ---------------- */}
   <motion.div
     initial={{ opacity: 0, x: 40 }}
@@ -515,6 +658,7 @@ gap-3
             "Group-445-1.jpg",
             "sw.jpeg",
             "oak.jpeg",
+
           ].map((img, i) => (
             <img
               key={i}
