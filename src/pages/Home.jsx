@@ -357,7 +357,13 @@ export default function Home() {
             <img
               src="/home/carru2.jpeg"
               alt="Promoción"
-              className="w-full h-[450px] object-cover rounded-2xl"
+             className="w-full
+h-[260px]
+sm:h-[350px]
+lg:h-[450px]
+object-cover
+rounded-2xl
+"
             />
           </SwiperSlide>
 
@@ -419,8 +425,14 @@ export default function Home() {
         Portafolio
       </h2>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-        {[
+<div className="
+grid
+grid-cols-2
+sm:grid-cols-3
+lg:grid-cols-4
+gap-4
+sm:gap-6
+">        {[
           "piloto.png",
           "rayban 1.jpeg",
           "carolina h sol.png",
@@ -492,7 +504,12 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-morado mb-6">
           Gama de Productos
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="
+grid
+grid-cols-2
+md:grid-cols-4
+gap-3
+">
           {[
             "piloto c.png",
             "Group-445-1.jpg",
