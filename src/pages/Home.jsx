@@ -26,8 +26,6 @@ export default function Home() {
     shadow-2xl
   "
 >
-
-
   {/* ---------------- LOGO GRANDE DE FONDO ---------------- */}
   <img
   src="/logo_small.png"
@@ -45,11 +43,7 @@ export default function Home() {
     z-0
   "
 />
-
-
-
   {/* ---------------- EFECTOS DE LUZ ---------------- */}
-
   <div
     className="
       absolute
@@ -63,7 +57,6 @@ export default function Home() {
     "
   >
   </div>
-
 
   <div
     className="
@@ -79,8 +72,6 @@ export default function Home() {
   >
   </div>
 
-
-
   <div
     className="
       absolute
@@ -93,9 +84,6 @@ export default function Home() {
   >
   </div>
 
-
-
-
   {/* ---------------- CONTENIDO ---------------- */}
 
   <div
@@ -106,22 +94,14 @@ export default function Home() {
       lg:grid-cols-2
       items-center
       gap-12
-      px-8
-      lg:px-16
-      py-16
+      px-5
+      lg:py-16
+      py-10
     "
   >
-
-
-
     {/* ---------------- TEXTO IZQUIERDA ---------------- */}
-
     <div>
-
-
-
       {/* ETIQUETA */}
-
       <span
         className="
           inline-flex
@@ -143,27 +123,22 @@ export default function Home() {
       >
         👁️ Tu visión, nuestra prioridad en tu optica virtual J & V
       </span>
-
-
-
-
       {/* TITULO */}
 
       <h1
         className="
-          text-4xl
+          text-3xl
           lg:text-5xl
+          sm:text-4xl
           font-black
           text-white
           leading-tight
           drop-shadow-lg
         "
       >
-
         Óptica
 
         <br />
-
         <span
           className="
             text-purple-100
@@ -173,12 +148,7 @@ export default function Home() {
         </span>
 
       </h1>
-
-
-
-
       {/* SLOGAN */}
-
       <h2
         className="
           mt-6
@@ -189,11 +159,7 @@ export default function Home() {
       >✨ Cuidamos tu visión, realzamos tu estilo.
       </h2>
 
-
-
-
       {/* DESCRIPCIÓN */}
-
       <p
         className="
           mt-5
@@ -206,13 +172,7 @@ export default function Home() {
       >
      Descubre monturas exclusivas, lentes oftálmicos de alta precisión y lentes de contacto de las mejores marcas. Cuida tu salud visual con tecnología de última generación, calidad garantizada y diseños que resaltan tu estilo.
       </p>
-
-
-
-
-
       {/* BOTONES */}
-
       <div
         className="
           flex
@@ -221,8 +181,6 @@ export default function Home() {
           mt-10
         "
       >
-
-
         <Link
           to="/contacto"
           className="
@@ -240,9 +198,6 @@ export default function Home() {
         >
           📅 Agendar Cita
         </Link>
-
-
-
         <Link
           to="/catalogo"
           className="
@@ -261,14 +216,9 @@ export default function Home() {
           🛍️ Ver Catálogo
         </Link>
 
-
       </div>
 
-
-
-
       {/* BENEFICIOS */}
-
       <div
 
         className="
@@ -279,19 +229,12 @@ export default function Home() {
           gap-6
         "
       >
-
-
       </div>
 
 
     </div>
 
-
-
-
-
     {/* ---------------- IMAGEN DERECHA ---------------- */}
-
     <div
       className="
         relative
@@ -301,11 +244,7 @@ export default function Home() {
         min-h-[520px]
       "
     >
-
-
-
       {/* CIRCULO DETRAS DE GAFAS */}
-
       <div
         className="
           absolute
@@ -318,10 +257,6 @@ export default function Home() {
         "
       >
       </div>
-
-
-
-
 
       {/* LOGO MARCA DE AGUA CENTRAL */}
 
@@ -344,15 +279,9 @@ export default function Home() {
           pointer-events-none
         "
       />
-
-
-
-
-
       {/* GAFAS PRINCIPALES */}
-
       <motion.img
-        src="/home/lacoste h s.jpeg"
+        src="/home/vero 1.jpeg"
         alt="Gafas Óptica J&V"
         animate={{
           y:[0,-15,0],
@@ -374,14 +303,8 @@ export default function Home() {
           border-white/40
         "
       />
-
-
-
     </div>
-
-
   </div>
-
 </motion.section>
       {/* ------------------ BOTONES RÁPIDOS ------------------ */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
@@ -417,16 +340,12 @@ export default function Home() {
           <span className="text-3xl block">👁️</span>
           <span className="font-semibold">Citas</span>
         </Link>
-
       </div>
-
       {/* ------------------ CARRUSEL ------------------ */}
       <div>
-
         <h2 className="text-3xl font-bold text-morado mb-4">
           Promociones
         </h2>
-
         <Swiper
           modules={[Autoplay, Pagination]}
           autoplay={{ delay: 2500 }}
@@ -452,20 +371,16 @@ export default function Home() {
 
           <SwiperSlide>
             <img
-              src="/home/carru 1.jpeg"
+              src="/home/gafas 26.png"
               alt="Promoción"
               className="w-full h-[450px] object-cover rounded-2xl"
             />
           </SwiperSlide>
         </Swiper>
-
       </div>
-
       <div className="grid lg:grid-cols-3 gap-10">
-
   {/* ---------------- COLUMNA IZQUIERDA ---------------- */}
   <div className="lg:col-span-2 space-y-12">
-
     {/* CATEGORÍAS */}
     <div>
       <h2 className="text-3xl font-bold text-morado mb-6">
@@ -473,13 +388,11 @@ export default function Home() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-
         {[
           { img: "/home/img1.png", title: "Gafas de Sol" },
           { img: "/home/img2.png", title: "Gafas Oftálmicas" },
           { img: "/home/img3.png", title: "Lentes de Contacto" },
         ].map((cat) => (
-
           <motion.div
             key={cat.title}
             whileHover={{ scale: 1.05 }}
@@ -496,21 +409,17 @@ export default function Home() {
             </h3>
 
           </motion.div>
-
         ))}
 
       </div>
     </div>
-
     {/* PORTAFOLIO */}
     <div>
-
       <h2 className="text-3xl font-bold text-morado mb-6">
         Portafolio
       </h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-
         {[
           "piloto.png",
           "rayban 1.jpeg",
@@ -520,7 +429,6 @@ export default function Home() {
           "pradah.jpeg",
           "pramcolor.jpeg",
           "lacostesh.jpeg",
-    
         ].map((img, i) => (
 
           <img
@@ -531,13 +439,9 @@ export default function Home() {
           />
 
         ))}
-
       </div>
-
     </div>
-
   </div>
-
   {/* ---------------- COLUMNA DERECHA ---------------- */}
   <motion.div
     initial={{ opacity: 0, x: 40 }}
@@ -545,24 +449,19 @@ export default function Home() {
     transition={{ duration: 0.7 }}
     className="bg-white rounded-2xl shadow-xl p-6 h-fit sticky top-24"
   >
-
     <img
       src="/home/post1.jpeg"
       alt="Consejo"
       className="rounded-xl w-full mb-6"
     />
-
     <h2 className="text-3xl font-bold text-morado mb-4">
       Consejos de Salud Visual
     </h2>
-
     <div className="space-y-5">
-
   <div className="bg-purple-50 border-l-4 border-morado rounded-xl p-4">
     <h3 className="text-xl font-semibold text-morado flex items-center gap-2">
       💻 Descansa tu vista
     </h3>
-
     <p className="text-gray-700 mt-2 leading-7">
       Si pasas muchas horas frente a computadores, celulares o tabletas,
       aplica la regla <strong>20-20-20</strong>: cada 20 minutos mira un
@@ -570,14 +469,11 @@ export default function Home() {
       Esto ayuda a disminuir la fatiga visual y el cansancio ocular.
     </p>
   </div>
-
   <div className="border-t border-gray-200"></div>
-
   <div className="bg-purple-50 border-l-4 border-morado rounded-xl p-4">
     <h3 className="text-xl font-semibold text-morado flex items-center gap-2">
       🌙 Cuida tus ojos antes de dormir
     </h3>
-
     <p className="text-gray-700 mt-2 leading-7">
       Reduce el uso de pantallas al menos <strong>una hora antes de acostarte</strong>.
       La luz azul puede interferir con la producción de melatonina, afectando
@@ -585,45 +481,34 @@ export default function Home() {
       lentes con filtro Blue Block o activa el modo nocturno de tus equipos.
     </p>
   </div>
-
 </div>
-
     <button className="mt-6 bg-morado text-white px-6 py-3 rounded-lg hover:bg-purple-700 transition">
       Leer más
     </button>
-
   </motion.div>
-
 </div>
       {/* ------------------ gama ------------------ */}
       <div>
-
         <h2 className="text-3xl font-bold text-morado mb-6">
           Gama de Productos
         </h2>
-
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-
           {[
             "piloto c.png",
             "Group-445-1.jpg",
             "sw.jpeg",
             "oak.jpeg",
           ].map((img, i) => (
-
             <img
               key={i}
               src={`/home/${img}`}
               alt={`Producto ${i + 1}`}
               className="rounded-xl h-40 w-full object-cover shadow-lg"
             />
-
           ))}
 
         </div>
-
       </div>
-
       {/* ------------------ SECCIÓN MEJORADA: CUIDADOS Y ACCESORIOS ------------------ */}
       <section className="max-w-6xl mx-auto px-6">
         <motion.div
@@ -633,7 +518,6 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="grid md:grid-cols-2 gap-8 items-stretch"
         >
-          
           {/* COLUMNA IZQUIERDA: Consejos Profesionales */}
           <div className="p-8 bg-gradient-to-br from-purple-50 to-purple-100 border-l-8 border-purple-600 rounded-3xl shadow-xl flex flex-col justify-center">
             <span className="text-purple-600 font-extrabold uppercase tracking-wider text-xs mb-2">
@@ -642,7 +526,6 @@ export default function Home() {
             <h2 className="text-3xl font-black mb-6 text-gray-800">
               Protege tu Salud Visual
             </h2>
-
             <ul className="space-y-4 text-gray-700 text-lg">
               <li className="flex items-start gap-3">
                 <span className="text-2xl mt-0.5">👁️</span>
@@ -670,10 +553,9 @@ export default function Home() {
               </li>
             </ul>
           </div>
-
           {/* COLUMNA DERECHA: Espacio Comercial de Accesorios */}
           <div className="bg-white border border-purple-100 rounded-3xl shadow-xl p-8 flex flex-col justify-between overflow-hidden relative group">
-            
+        
             {/* Texto Comercial */}
             <div>
               <span className="bg-amber-100 text-amber-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
@@ -686,7 +568,6 @@ export default function Home() {
                 Mantén tus lentes impecables y protegidos con nuestra línea exclusiva de estuches rígidos, cordones de moda y kits de limpieza profesional.
               </p>
             </div>
-
             {/* CONTENEDOR DE LA IMAGEN */}
             <div className="my-6 relative rounded-2xl overflow-hidden bg-purple-50 h-52 flex items-center justify-center border border-dashed border-purple-200">
               <img 
@@ -698,9 +579,7 @@ export default function Home() {
                   e.target.nextSibling.style.display = 'flex';
                 }}
               />
-            
             </div>
-
             {/* Enlace o Botón Comercial */}
             <a 
               href="/catalogo" 
@@ -708,9 +587,7 @@ export default function Home() {
             >
               Ver Catálogo de Accesorios
             </a>
-
           </div>
-
         </motion.div>
       </section> 
 {/* ------------------ FILTROS Y TECNOLOGÍAS ------------------ */}
@@ -718,7 +595,6 @@ export default function Home() {
   <h2 className="text-3xl font-bold text-morado mb-8 text-center">
     Filtros y Tecnologías
   </h2>
-
   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
     {[
@@ -775,7 +651,6 @@ export default function Home() {
 
   </div>
 </div>
-
     </section>
   );
 }

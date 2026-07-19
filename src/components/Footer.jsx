@@ -99,7 +99,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://instagram.com"
+                href="https://instagram.com/opticajyv"
                 target="_blank"
                 rel="noreferrer"
                 className="w-11 h-11 rounded-full bg-white/15 flex justify-center items-center hover:bg-pink-500 transition"
@@ -108,7 +108,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://youtube.com"
+                href="https://tiktok.com/@optica.j.y.v"
                 target="_blank"
                 rel="noreferrer"
                 className="w-11 h-11 rounded-full bg-white/15 flex justify-center items-center hover:bg-red-600 transition"
